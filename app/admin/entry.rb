@@ -1,4 +1,5 @@
 ActiveAdmin.register Entry do
+  permit_params :title, :entry
 
   
   # See permitted parameters documentation:
