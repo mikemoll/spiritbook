@@ -1,5 +1,11 @@
 Spiritbook::Application.routes.draw do
-  resources :entries
+  resources :entries do
+  #->Prelang (voting/acts_as_votable)
+  member do
+    get "vote"
+  end
+end
+
 
   resources :photos do
   #->Prelang (voting/acts_as_votable)
