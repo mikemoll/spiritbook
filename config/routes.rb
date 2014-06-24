@@ -1,4 +1,5 @@
 Spiritbook::Application.routes.draw do
+  get "pages/index"
   resources :entries do
   #->Prelang (voting/acts_as_votable)
   member do
